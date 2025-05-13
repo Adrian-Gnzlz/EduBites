@@ -1,0 +1,548 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------- ENCABEZADO -------------------------------------- */
+.boton-display-chico, .navbar-derecha-chiquito{
+    display: none;
+}
+
+.encabezado {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    justify-content: center;
+    overflow: hidden;
+    background-color: #cf8b17;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+.encabezado nav{
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.navbar-izquierda, .navbar-derecha{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-derecha i{
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-izquierda .logo-flexthink{
+    width: 50px;
+    border-radius: 50%;
+}
+.texto-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    height: 30px;
+    border-right: 2px solid black;
+    color: white;
+    font-size: 28px;
+}
+
+.encabezado a{
+    color: white;
+    text-decoration: none;
+    font-weight:900;
+    letter-spacing: 1px;
+}
+
+.navbar-izquierda div a{
+    position: relative;
+    margin-right: 50px;
+    letter-spacing: 2px;
+}
+.navbar-izquierda div a:hover{
+    position: relative;
+    color: #821018;
+    box-shadow: 0 54px 0 2px  #821018;
+}
+
+.localizar-tienda a:hover, 
+.botones-ingresar-unete .boton-ingresar:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.localizar-tienda a:hover {
+    color: #616161;
+}
+
+.botones-ingresar-unete .boton-ingresar:hover, .boton-unete:hover{
+    padding: 5px 16px;
+    border: 1px solid #56070c; 
+    background-color: transparent; 
+    color: #56070c; 
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+    
+    transition: background-color 0.5s ease;
+}
+
+.botones-ingresar-unete .boton-unete:hover{
+    padding: 5px 14px; 
+    background-color: #56070c;
+    color: white;
+}
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: black;
+    color: white;
+}
+
+.botones-ingresar-unete{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.botones-ingresar-unete .boton-ingresar, .boton-unete{
+    padding: 5px 16px;
+    border: 1px solid white; 
+    background-color: transparent; 
+    color: white;
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: #821018;
+    color: white;
+}
+.boton-unete{
+    border: 1px solid transparent;
+}
+
+.boton-unete:hover{
+    background-color: #616161;
+}
+
+/* -------------------------------------- MAIN -------------------------------------- */
+
+main{
+    background-color: #e0dfdf;
+    padding-bottom: 50px;
+}
+
+.contenedor-main section {
+    margin-bottom: 50px;
+}
+
+.paigna-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    padding: 50px 0px;
+    padding-top: 120px;
+}
+
+.contenido-top img {
+    width: 500px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+.contenido-top p {
+    font-size: 50px;
+    color: #782a32;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Carter One', cursive;
+}
+
+.navegador{
+    padding: 0 100px;
+    margin-bottom: 50px;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.navegador a{
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}
+
+.texto-sobre-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 20px;
+    gap: 40px;
+    color: #616161;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.texto-sobre-nosotros #texto-dos{
+    margin: 0 50px;
+}
+.texto-sobre-nosotros #texto-tres{
+    font-size: 18px;
+    font-weight: 800;
+    color: #505050;
+}
+
+.texto-sobre-nosotros #imagen-uno{
+    width: 100%;
+    max-width: 1850px;
+}
+
+
+/* -------------------------------------- FOOTER -------------------------------------- */
+.pie-pagina .contenedor-sobre-nosotros-chiquito, .pie-pagina .contenedor-atencion-cliente-chiquito{
+    display: none;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #cf8b17;
+}
+
+.pie-pagina .contenedor-textos,.contenedor-RS{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: start;
+}
+
+.contenedor-RS{
+    justify-content: center;
+    margin-top: 40px;
+    border-top: 2px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.links-RS i:hover{
+    color: #333333;
+    transform: translateY(-3px);
+}
+
+.sobre-nosotros a, .atencion-al-cliente a{
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+.sobre-nosotros a:hover, .atencion-al-cliente a:hover{
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(199, 195, 195);
+}
+
+.sobre-nosotros{
+    margin-right: 50px;
+}
+.sobre-nosotros p, .atencion-al-cliente p{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.pie-pagina i{
+    margin-top: 10px;
+    font-size: 35px;
+    width: 55px;
+    color: rgb(209, 206, 206);
+}
+
+.contenedor-links-extra .links-extra{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-links-extra a{
+    border-right: 2px solid #821018;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+
+.contenedor-links-extra a:hover{
+    border-right: 2px solid #821018;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(209, 206, 206);
+}
+
+.contenedor-links-extra #ultimo-link{
+    border: none;
+}
+
+.contenedor-copyright{
+    margin-top: 20px;
+}
+
+.contenedor-copyright p{
+    display: flex;
+    justify-content: center;
+    color: rgb(209, 206, 206);
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.contenedor-copyright #textoChico{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+
+/* -------------------------------------- Queries -------------------------------------- */
+@media screen and (max-width:768px) {
+
+    /* --------------------------------- HEADER --------------------------------- */
+    .navbar-derecha-chiquito{
+        display: block;
+    }
+    .navbar-derecha, .etiquetas-menu-rewards, .selector-desplegable, .menu-alternar{
+        display: none;
+    }
+
+    .encabezado{
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+        overflow: hidden;
+        position: fixed;
+        background-color: #cf8b17;
+        width: 100%;
+    }
+
+    .boton-selector{
+        margin-right: 50px;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable ul{
+        position: fixed;
+        top: 75px;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .navbar-izquierda .logo-flexthink{
+        width: 40px;
+    }
+
+    .selector-desplegable ul li a:hover{
+        color: #01754a;
+    }
+
+    .encabezado nav{
+        display: flex;
+        width: 100%;
+        max-width: 1250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .boton-selector{
+        font-size: 20px;
+        color: #aaaaaa;
+    }
+
+    .boton-selector .fa-xmark{
+        display: none;
+    }
+
+    .menu-alternar:checked + .boton-selector .fa-bars{
+        display: none;
+    }
+    .menu-alternar:checked + .boton-selector .fa-xmark{
+        display: inline-block;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable{
+        display: block;
+    }
+
+    .boton-selector{
+        cursor: pointer;
+    }
+
+    .contenedor-menu-rewards{
+        margin: 50px 25px;
+    }
+
+
+    .contenedor-localizarT-botones{
+        margin-top: 40px;
+        font-size: 20px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .selector-desplegable ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 85%;
+    }
+
+    .selector-desplegable ul li{
+        font-size: 15px;
+        margin-bottom: 30px;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .contenedor-localizarT-botones .localizar-tienda{
+        margin-top: 30px;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-ingresar{
+        padding: 6px 16px;
+        background-color: red;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-unete{
+        padding: 6px 16px;
+    }
+    .texto-logo{
+        border-right: 0px;
+    }
+
+
+    /* --------------------------------- MAIN --------------------------------- */
+
+
+
+    /* --------------------------------- Footer --------------------------------- */
+    .pie-pagina .contenedor-sobre-nosotros-chiquito, 
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        display: block;
+    }
+
+    .contenedor-textos div, .desplegar-sobre-nosotros, .desplegar-atencion-cliente{
+        display: none;
+    }
+
+    .pie-pagina{
+        display: flex;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .pie-pagina section{
+        width: 100%;
+    }
+
+    .boton-desplegar-sobre-nosotros, .boton-desplegar-atencion-cliente{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(0, 0, 0, .87);
+    }
+    .boton-desplegar-sobre-nosotros p, .boton-desplegar-atencion-cliente p{
+        display: flex;
+        justify-content: start;
+    }
+
+    .boton-desplegar-sobre-nosotros i, .boton-desplegar-atencion-cliente i{
+        display: flex;
+        justify-content: end;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito,
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito i,
+    .pie-pagina .contenedor-atencion-cliente-chiquito i{
+        font-size: 20px;
+    }
+
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros li,
+    .selector-atencion-cliente .contenedor-atencion-cliente li{
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a,
+    .selector-atencion-cliente .contenedor-atencion-cliente a{
+        color: #777;
+        text-decoration: none;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a:hover,
+    .selector-atencion-cliente .contenedor-atencion-cliente a:hover{
+        color: white;
+    }
+
+    .pie-pagina .selector-sobre-nosotros ul,
+    .pie-pagina .selector-atencion-cliente ul{
+        padding: 0;
+    }
+
+    .links-extra a{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: none;
+    }
+
+    .desplegar-sobre-nosotros:checked ~ .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: block;
+    }
+
+    .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: none;
+    }
+
+    .desplegar-atencion-cliente:checked ~ .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: block;
+    }
+}

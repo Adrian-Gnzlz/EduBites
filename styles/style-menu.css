@@ -1,0 +1,603 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+
+/* -------------------------------------- ENCABEZADO -------------------------------------- */
+.boton-display-chico, .navbar-derecha-chiquito{
+    display: none;
+}
+
+.encabezado {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    justify-content: center;
+    overflow: hidden;
+}
+.encabezado nav{
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-izquierda, .navbar-derecha{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-derecha i{
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-izquierda .logo-flexthink{
+    width: 50px;
+    border-radius: 50%;
+}
+.texto-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    height: 30px;
+    border-right: 2px solid black;
+    color: #616161;
+    font-size: 28px;
+}
+
+.encabezado a{
+    color: black;
+    text-decoration: none;
+    font-weight:900;
+    letter-spacing: 1px;
+}
+
+.navbar-izquierda div a{
+    position: relative;
+    margin-right: 50px;
+    letter-spacing: 2px;
+}
+.navbar-izquierda div a:hover{
+    position: relative;
+    color: #01754a;
+    box-shadow: 0 54px 0 2px  #01754a;
+}
+
+.localizar-tienda a:hover, 
+.botones-ingresar-unete .boton-ingresar:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.localizar-tienda a:hover {
+    color: #616161;
+}
+
+.botones-ingresar-unete .boton-ingresar:hover, .boton-unete:hover{
+    padding: 5px 16px;
+    border: 1px solid #616161; 
+    background-color: transparent; 
+    color: #616161; 
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+    
+    transition: background-color 0.5s ease;
+}
+
+.botones-ingresar-unete .boton-unete:hover{
+    padding: 5px 14px; 
+    background-color: #616161;
+    color: white;
+}
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: black;
+    color: white;
+}
+
+.botones-ingresar-unete{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.botones-ingresar-unete .boton-ingresar, .boton-unete{
+    padding: 5px 16px;
+    border: 1px solid black; 
+    background-color: transparent; 
+    color: black;
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: black;
+    color: white;
+}
+
+.boton-unete:hover{
+    background-color: #616161;
+}
+
+/* -------------------------------------- MAIN -------------------------------------- */
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    align-items: center;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contenedor-main p, .contenedor-main h2{
+    margin: 0;
+}
+.contenedor-main h2{
+    margin-bottom: 20px;
+}
+
+.primera-division{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1250px;
+}
+.primera-division div{
+    max-width: 700px;
+    padding: 40px 0 20px 0;
+}
+
+.segunda-division{
+    width: 100%;
+    max-width: 1250px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px 0;
+}
+
+#separadorUno, #separadorDos, #separadorTres{
+    display: flex;
+    width: 95%;
+    max-width: 1250px;
+    padding: 25px 0;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+}
+
+.segunda-division div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.segunda-division div p{
+    justify-content: center;
+}
+
+.segunda-division img{
+    margin-bottom: 20px;
+}
+
+.circulo-imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #1e3932;
+    box-sizing: border-box;
+}
+
+.circulo-imagen:hover{
+    border: 10px solid #d4e9e2;
+}
+
+#ultimaDivision{
+    margin-bottom: 70px;
+}
+
+
+/* -------------------------------------- FOOTER -------------------------------------- */
+.pie-pagina .contenedor-sobre-nosotros-chiquito, .pie-pagina .contenedor-atencion-cliente-chiquito{
+    display: none;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 1);
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.pie-pagina .contenedor-textos,.contenedor-RS{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: start;
+}
+
+.contenedor-RS{
+    justify-content: center;
+    margin-top: 40px;
+    border-top: 2px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.links-RS i:hover{
+    color: #333333;
+    transform: translateY(-3px);
+}
+
+.sobre-nosotros a, .atencion-al-cliente a{
+    line-height: 3;
+    text-decoration: none;
+    color: #777;
+}
+.sobre-nosotros a:hover, .atencion-al-cliente a:hover{
+    line-height: 3;
+    text-decoration: none;
+    color: black;
+}
+
+.sobre-nosotros{
+    margin-right: 50px;
+}
+.sobre-nosotros p, .atencion-al-cliente p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pie-pagina i{
+    margin-top: 10px;
+    font-size: 35px;
+    width: 55px;
+    color: black;
+}
+
+.contenedor-links-extra .links-extra{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-links-extra a{
+    border-right: 2px solid #999;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #999;
+}
+
+.contenedor-links-extra a:hover{
+    border-right: 2px solid #777777;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: #777777;
+}
+
+.contenedor-links-extra #ultimo-link{
+    border: none;
+}
+
+.contenedor-copyright{
+    margin-top: 20px;
+}
+
+.contenedor-copyright p{
+    display: flex;
+    justify-content: center;
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.contenedor-copyright #textoChico{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+/* -------------------------------------- COOKIES -------------------------------------- */
+.contenedor-cookie{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white; 
+    color: #000; 
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
+    z-index: 9999;
+}
+
+.mensaje-fijo-cookies{
+    line-height: 24px;
+}
+
+.button-cookie{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 6px 13px;
+    border-radius: 25px;
+    width: 100px;
+    height: 25px;
+    margin-right: 50px;
+}
+
+.button-cookie .boton-cookies{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.mensaje-fijo-cookies u{
+    color: black;
+}
+
+.invisible{
+    display: none;
+}
+
+/* -------------------------------------- Queries -------------------------------------- */
+@media screen and (max-width:768px) {
+
+    /* --------------------------------- HEADER --------------------------------- */
+    .navbar-derecha-chiquito{
+        display: block;
+    }
+    .navbar-derecha, .etiquetas-menu-rewards, .selector-desplegable, .menu-alternar{
+        display: none;
+    }
+
+    .encabezado{
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+        overflow: hidden;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+
+    .boton-selector{
+        margin-right: 50px;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable ul{
+        position: fixed;
+        top: 75px;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .navbar-izquierda .logo-flexthink{
+        width: 40px;
+    }
+
+    .selector-desplegable ul li a:hover{
+        color: #01754a;
+    }
+
+    .encabezado nav{
+        display: flex;
+        width: 100%;
+        max-width: 1250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .boton-selector{
+        font-size: 20px;
+        color: #aaaaaa;
+    }
+
+    .boton-selector .fa-xmark{
+        display: none;
+    }
+
+    .menu-alternar:checked + .boton-selector .fa-bars{
+        display: none;
+    }
+    .menu-alternar:checked + .boton-selector .fa-xmark{
+        display: inline-block;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable{
+        display: block;
+    }
+
+    .boton-selector{
+        cursor: pointer;
+    }
+
+    .contenedor-menu-rewards{
+        margin: 50px 25px;
+    }
+
+
+    .contenedor-localizarT-botones{
+        margin-top: 40px;
+        font-size: 20px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .selector-desplegable ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 85%;
+    }
+
+    .selector-desplegable ul li{
+        font-size: 15px;
+        margin-bottom: 30px;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .contenedor-localizarT-botones .localizar-tienda{
+        margin-top: 30px;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-ingresar{
+        padding: 6px 16px;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-unete{
+        padding: 6px 16px;
+    }
+
+    .texto-logo{
+        border-right: 0px;
+    }
+
+
+    /* --------------------------------- MAIN --------------------------------- */
+    .contenedor-main{
+        padding-top: 70px;
+    }
+
+    .segunda-division{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #separadorUno, #separadorDos, #separadorTres{
+        padding: 13px 0;
+    }
+
+
+
+    /* --------------------------------- Footer --------------------------------- */
+    .pie-pagina .contenedor-sobre-nosotros-chiquito, 
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        display: block;
+    }
+
+    .contenedor-textos div, .desplegar-sobre-nosotros, .desplegar-atencion-cliente{
+        display: none;
+    }
+
+    .pie-pagina{
+        display: flex;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .pie-pagina section{
+        width: 100%;
+    }
+
+    .boton-desplegar-sobre-nosotros, .boton-desplegar-atencion-cliente{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(0, 0, 0, .87);
+    }
+    .boton-desplegar-sobre-nosotros p, .boton-desplegar-atencion-cliente p{
+        display: flex;
+        justify-content: start;
+    }
+
+    .boton-desplegar-sobre-nosotros i, .boton-desplegar-atencion-cliente i{
+        display: flex;
+        justify-content: end;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito,
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito i,
+    .pie-pagina .contenedor-atencion-cliente-chiquito i{
+        font-size: 20px;
+    }
+
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros li,
+    .selector-atencion-cliente .contenedor-atencion-cliente li{
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a,
+    .selector-atencion-cliente .contenedor-atencion-cliente a{
+        color: #777;
+        text-decoration: none;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a:hover,
+    .selector-atencion-cliente .contenedor-atencion-cliente a:hover{
+        color: black;
+    }
+
+    .pie-pagina .selector-sobre-nosotros ul,
+    .pie-pagina .selector-atencion-cliente ul{
+        padding: 0;
+    }
+
+    .links-extra a{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: none;
+    }
+
+    .desplegar-sobre-nosotros:checked ~ .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: block;
+    }
+
+    .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: none;
+    }
+
+    .desplegar-atencion-cliente:checked ~ .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: block;
+    }
+}

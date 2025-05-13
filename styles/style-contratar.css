@@ -1,0 +1,700 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------------- ENCABEZADO -------------------------------------- */
+.boton-display-chico, .navbar-derecha-chiquito{
+    display: none;
+}
+
+.encabezado {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    justify-content: center;
+    overflow: hidden;
+    background-color: #cf8b17;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+.encabezado nav{
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.navbar-izquierda, .navbar-derecha{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-derecha i{
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-izquierda .logo-flexthink{
+    width: 50px;
+    border-radius: 50%;
+}
+.texto-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    height: 30px;
+    border-right: 2px solid black;
+    color: white;
+    font-size: 28px;
+}
+
+.encabezado a{
+    color: white;
+    text-decoration: none;
+    font-weight:900;
+    letter-spacing: 1px;
+}
+
+.navbar-izquierda div a{
+    position: relative;
+    margin-right: 50px;
+    letter-spacing: 2px;
+}
+.navbar-izquierda div a:hover{
+    position: relative;
+    color: #821018;
+    box-shadow: 0 54px 0 2px  #821018;
+}
+
+.localizar-tienda a:hover, 
+.botones-ingresar-unete .boton-ingresar:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+}
+
+.localizar-tienda a:hover {
+    color: #616161;
+}
+
+.botones-ingresar-unete .boton-ingresar:hover, .boton-unete:hover{
+    padding: 5px 16px;
+    border: 1px solid #56070c; 
+    background-color: transparent; 
+    color: #56070c; 
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+    
+    transition: background-color 0.5s ease;
+}
+
+.botones-ingresar-unete .boton-unete:hover{
+    padding: 5px 14px; 
+    background-color: #56070c;
+    color: white;
+}
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: black;
+    color: white;
+}
+
+.botones-ingresar-unete{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.botones-ingresar-unete .boton-ingresar, .boton-unete{
+    padding: 5px 16px;
+    border: 1px solid white; 
+    background-color: transparent; 
+    color: white;
+    font-size: 16px; 
+    font-weight: 600;
+    border-radius: 25px;
+}
+
+
+.botones-ingresar-unete .boton-unete{
+    padding: 5px 14px; 
+    background-color: #821018;
+    color: white;
+}
+.boton-unete{
+    border: 1px solid transparent;
+}
+
+.boton-unete:hover{
+    background-color: #616161;
+}
+
+
+
+/* -------------------------------------- MAIN -------------------------------------- */
+main{
+    background-color: #e0dfdf;
+    padding-bottom: 50px;
+}
+
+.contenedor-imagen{
+    height: 500px;
+    overflow: hidden;
+}
+.contenedor-imagen img{
+    width: 100%;
+}
+
+.contenedor-imagen{
+    grid-column: 2;
+    grid-row: 1;
+    overflow: hidden;
+}
+.contenedor-imagen img{
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.contenedor-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 50px ;
+}
+.contenedor-texto h1{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.contenedor-texto h3{
+    font-size: 25px;
+}
+.contenedor-texto p{
+    font-size: 18px;
+}
+
+.contenedor-botones{
+    margin-bottom: 120px;
+}
+
+.seccion-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 400px;
+}
+
+.selector-periodos{
+    display:inline-flex;
+    gap:0;
+    background:#f1f1f1;
+    border-radius:9999px;
+    padding:2px;
+    margin:40px auto;
+}
+
+.periodo-btn{
+    border:none;
+    background:transparent;
+    color:#000;
+    font-weight:600;
+    padding:6px 32px;
+    border-radius:9999px;
+    cursor:pointer;
+    transition:all .25s ease;
+}
+
+.periodo-btn:not(.activo){
+    color:#5c5c5c;
+}
+
+.periodo-btn.activo{
+    background:#fff;
+    color:#000;
+    border:2px solid #0b61ff;
+}
+
+.periodo-btn:hover{
+    opacity:.85;
+}
+
+.info-fija{
+    font-size: 20px;
+    text-align: center;
+    padding: 16px 80px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 0 100px;
+    max-width: 1250px;
+    border: 1px solid #ddd;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.info-periodos {
+    display: flex;
+    gap: 30px;
+    max-width: 1300px;
+    margin: 0 100px;
+}
+
+.info {
+    display: flex;
+    display: none;
+    padding: 16px;
+    border: 1px solid #ddd;
+    max-width: 600px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.info h3{
+    color: #56070c;
+    font-size: 30px;
+    width: 260px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.info h3:not(.precio) {
+    position: relative;
+    padding-bottom: 8px;
+    background-image: linear-gradient(
+        to right,
+        transparent,
+        #cf8b17,
+        transparent
+    );
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 2px;
+}
+
+.info .precio{
+    margin-left: 15px;
+    font-size: 22px;
+}
+.info p{
+    color:#464545;
+    background-color: #e2dfdf;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+.info li{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.info ul{
+    margin: 0 auto;
+}
+
+.contenedor-top{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.contenedor-top #img-rebaja{
+    width: 180px;
+    position: absolute;
+    top: -100px;
+    left: 230px;
+}
+
+.info.activo {
+    display: block;
+}
+
+.info h3 {
+    margin: 0;
+}
+
+
+
+.calculadora-precios {
+    margin: 40px auto;
+    text-align: center;
+}
+.calculadora-precios h2 {
+    font-size: 24px;
+    color: #56070c;
+    margin-bottom: 16px;
+}
+.calculadora-precios input,
+.calculadora-precios button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+#resultadoPrecio {
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #56070c;
+    white-space: pre-line;
+}
+
+
+
+
+/* -------------------------------------- FOOTER -------------------------------------- */
+.pie-pagina .contenedor-sobre-nosotros-chiquito, .pie-pagina .contenedor-atencion-cliente-chiquito{
+    display: none;
+}
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #cf8b17;
+}
+
+.pie-pagina .contenedor-textos,.contenedor-RS{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    justify-content: start;
+}
+
+.contenedor-RS{
+    justify-content: center;
+    margin-top: 40px;
+    border-top: 2px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.links-RS i:hover{
+    color: #333333;
+    transform: translateY(-3px);
+}
+
+.sobre-nosotros a, .atencion-al-cliente a{
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+.sobre-nosotros a:hover, .atencion-al-cliente a:hover{
+    line-height: 3;
+    text-decoration: none;
+    color: rgb(199, 195, 195);
+}
+
+.sobre-nosotros{
+    margin-right: 50px;
+}
+.sobre-nosotros p, .atencion-al-cliente p{
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.pie-pagina i{
+    margin-top: 10px;
+    font-size: 35px;
+    width: 55px;
+    color: rgb(209, 206, 206);
+}
+
+.contenedor-links-extra .links-extra{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-links-extra a{
+    border-right: 2px solid #821018;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+
+.contenedor-links-extra a:hover{
+    border-right: 2px solid #821018;
+    padding-right: 10px;
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(209, 206, 206);
+}
+
+.contenedor-links-extra #ultimo-link{
+    border: none;
+}
+
+.contenedor-copyright{
+    margin-top: 20px;
+}
+
+.contenedor-copyright p{
+    display: flex;
+    justify-content: center;
+    color: rgb(209, 206, 206);
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.contenedor-copyright #textoChico{
+    font-size: 10px;
+    margin-top: 0;
+}
+
+
+/* -------------------------------------- Queries -------------------------------------- */
+@media screen and (max-width:768px) {
+
+    /* --------------------------------- HEADER --------------------------------- */
+    .navbar-derecha-chiquito{
+        display: block;
+    }
+    .navbar-derecha, .etiquetas-menu-rewards, .selector-desplegable, .menu-alternar{
+        display: none;
+    }
+
+    .encabezado{
+        display: flex;
+        padding: 15px 20px;
+        justify-content: center;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+        overflow: hidden;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+    }
+
+    .boton-selector{
+        margin-right: 50px;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable ul{
+        position: fixed;
+        top: 75px;
+        right: 0;
+        z-index: 9999;
+    }
+
+    .navbar-izquierda .logo-flexthink{
+        width: 40px;
+    }
+
+    .selector-desplegable ul li a:hover{
+        color: #01754a;
+    }
+
+    .encabezado nav{
+        display: flex;
+        width: 100%;
+        max-width: 1250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .boton-selector{
+        font-size: 20px;
+        color: #aaaaaa;
+    }
+
+    .boton-selector .fa-xmark{
+        display: none;
+    }
+
+    .menu-alternar:checked + .boton-selector .fa-bars{
+        display: none;
+    }
+    .menu-alternar:checked + .boton-selector .fa-xmark{
+        display: inline-block;
+    }
+
+    .menu-alternar:checked ~ .selector-desplegable{
+        display: block;
+    }
+
+    .boton-selector{
+        cursor: pointer;
+    }
+
+    .contenedor-menu-rewards{
+        margin: 50px 25px;
+    }
+
+
+    .contenedor-localizarT-botones{
+        margin-top: 40px;
+        font-size: 20px;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .selector-desplegable ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        position: absolute;
+        height: 100%;
+        width: 85%;
+    }
+
+    .selector-desplegable ul li{
+        font-size: 15px;
+        margin-bottom: 30px;
+        width: 80%;
+        cursor: pointer;
+    }
+
+    .contenedor-localizarT-botones .localizar-tienda{
+        margin-top: 30px;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-ingresar{
+        padding: 6px 16px;
+    }
+
+    .contenedor-localizarT-botones .botones-ingresar-unete .boton-unete{
+        padding: 6px 16px;
+    }
+    .texto-logo{
+        border-right: 0px;
+    }
+    
+
+    /* --------------------------------- MAIN --------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* --------------------------------- Footer --------------------------------- */
+    .pie-pagina .contenedor-sobre-nosotros-chiquito, 
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        display: block;
+    }
+
+    .contenedor-textos div, .desplegar-sobre-nosotros, .desplegar-atencion-cliente{
+        display: none;
+    }
+
+    .pie-pagina{
+        display: flex;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .pie-pagina section{
+        width: 100%;
+    }
+
+    .boton-desplegar-sobre-nosotros, .boton-desplegar-atencion-cliente{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(0, 0, 0, .87);
+    }
+    .boton-desplegar-sobre-nosotros p, .boton-desplegar-atencion-cliente p{
+        display: flex;
+        justify-content: start;
+    }
+
+    .boton-desplegar-sobre-nosotros i, .boton-desplegar-atencion-cliente i{
+        display: flex;
+        justify-content: end;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito,
+    .pie-pagina .contenedor-atencion-cliente-chiquito{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .pie-pagina .contenedor-sobre-nosotros-chiquito i,
+    .pie-pagina .contenedor-atencion-cliente-chiquito i{
+        font-size: 20px;
+    }
+
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros li,
+    .selector-atencion-cliente .contenedor-atencion-cliente li{
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a,
+    .selector-atencion-cliente .contenedor-atencion-cliente a{
+        color: #777;
+        text-decoration: none;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros a:hover,
+    .selector-atencion-cliente .contenedor-atencion-cliente a:hover{
+        color: black;
+    }
+
+    .pie-pagina .selector-sobre-nosotros ul,
+    .pie-pagina .selector-atencion-cliente ul{
+        padding: 0;
+    }
+
+    .links-extra a{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: none;
+    }
+
+    .desplegar-sobre-nosotros:checked ~ .selector-sobre-nosotros .contenedor-sobre-nosotros{
+        display: block;
+    }
+
+    .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: none;
+    }
+
+    .desplegar-atencion-cliente:checked ~ .selector-atencion-cliente .contenedor-atencion-cliente{
+        display: block;
+    }
+}
