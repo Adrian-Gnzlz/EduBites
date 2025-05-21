@@ -11,6 +11,13 @@ html{
 .boton-display-chico, .navbar-derecha-chiquito{
     display: none;
 }
+.text{
+    font-size: 20px;
+}
+
+.contenedor-top img{
+    width: 400px;
+}
 
 .encabezado {
     display: flex;
@@ -319,6 +326,8 @@ main{
     position: relative;
     flex-direction: row;
 }
+
+
 .contenedor-top #img-rebaja{
     width: 180px;
     position: absolute;
