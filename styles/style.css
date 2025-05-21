@@ -154,6 +154,7 @@ main{
 
 .contenedor-main section {
     margin-bottom: 50px;
+    margin-top: 300px;
 }
 
 .paigna-top {
@@ -351,7 +352,7 @@ main{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 300px;
+    margin-top: 50px;
     font-size: 15px;
     color: #666;
 }
@@ -422,6 +423,73 @@ main{
 #contacto button[type="reset"]:hover {
     background-color: #333;
 }
+
+
+
+
+
+/* ====================== Nuestro Camino ====================== */
+#nuestro-camino.contenedor-visitas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 100px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+#nuestro-camino .visitas-intro {
+    grid-column: 1 / -1;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#nuestro-camino .visita-item {
+    text-align: center;
+}
+
+#nuestro-camino .visita-item h2 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.25rem;
+    color: #56070c;
+}
+
+#nuestro-camino .visita-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ====================== Nuestro Camino – ajuste de dos imágenes ====================== */
+#nuestro-camino .dos-fotos {
+  display: flex;
+  justify-content: center;    /* centra el grupo de imágenes */
+  align-items: center;
+  gap: 1.5rem;                /* espacio entre imágenes */
+  margin-top: 1rem;
+}
+
+#nuestro-camino .dos-fotos img {
+  display: block;
+  width: 90%;                 /* cada imagen ocupa 45% del contenedor */
+  max-width: 900px;           /* ancho máximo para no desbordar */
+  max-height: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+.subtitulos{
+    text-align: center;
+    color: #56070c;
+    font-size: 40px;
+}
+
 
 
 

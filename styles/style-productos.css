@@ -269,6 +269,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .contenedor-img img{
     width: 40%;
